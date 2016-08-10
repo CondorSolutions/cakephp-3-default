@@ -1,0 +1,133 @@
+.hidden{
+	display: none;
+}
+div.message {
+	text-align: center;
+    cursor: pointer;
+    display: block;
+    font-weight: normal;
+    padding: 0 1.5rem 0 1.5rem;
+    transition: height 300ms ease-out 0s;
+    background-color: #a0d3e8;
+    color: #626262;
+    top: 15px;
+    right: 15px;
+    z-index: 999;
+    overflow: hidden;
+    height: 50px;
+    line-height: 2.5em;
+    box-radius: 5px;
+    
+}
+
+div.message.error {
+    background-color: #C3232D;
+    color: #FFF;
+}
+
+.user-photo-big{
+	max-width: 300px;
+}
+
+/** Notices and Errors **/
+.cake-error,
+.cake-debug,
+.notice,
+p.error,
+p.notice {
+    display: block;
+    clear: both;
+    background-repeat: repeat-x;
+    margin-bottom: 18px;
+    padding: 70px 14px;
+    border-radius: 3px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.24);
+    
+}
+
+.cake-debug,
+.notice,
+p.notice {
+    color: #000000;
+    background: #ffcc00;
+}
+
+.cake-error,
+p.error {
+    color: #fff;
+    background: #C3232D;
+}
+
+pre {
+    background: none repeat scroll 0% 0% #FFF;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.24);
+    margin: 15px 0px;
+    color: rgba(0, 0 ,0 , 0.74);
+    padding:5px;
+}
+
+.cake-error .cake-stack-trace {
+    margin-top:10px;
+}
+
+.cake-stack-trace code {
+    background: inherit;
+    border:0;
+}
+
+.cake-code-dump .code-highlight {
+    display: block;
+    background-color: #FFC600;
+}
+
+.cake-error a,
+.cake-error a:hover {
+    color:#fff;
+    text-decoration: underline;
+}
+
+.input.file label{
+	display: block;
+	text-align: center;
+	padding: 10px;
+}
+
+.input-control select{
+	padding-left: 30px;
+}
+
+
+ul.pagination li a {
+    color: rgba(0, 0 ,0 , 0.54);
+}
+
+ul.pagination li.active a {
+    background-color: #DCE47E;
+    color: #FFF;
+    font-weight: bold;
+    cursor: default;
+}
+ul.pagination .disabled:hover a {
+    background: none;
+}
+
+.paginator {
+    text-align: center;
+}
+
+.paginator ul.pagination li {
+    float: none;
+    display: inline-block;
+}
+
+.paginator p {
+    text-align: right;
+    color: rgba(0, 0 ,0 , 0.54);
+}
+
+.asc:after {
+    content: " \2193";
+}
+.desc:after {
+    content: " \2191";
+}
